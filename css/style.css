@@ -1,0 +1,430 @@
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header ul {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #204f87;
+    font-size: 13px;
+}
+
+.banner {
+    background-image: url(../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
+.banner-row {
+    min-height: 90vh;
+    align-items: center;
+
+
+}
+
+.banner-row h1 {
+    font-size: 65px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.banner-icon {
+    position: absolute;
+    font-size: 22px;
+    color: #fff;
+    left: 50%;
+    top: 85%;
+    animation: 0.8s up infinite ease-in;
+    animation-direction: alternate;
+}
+
+@keyframes up {
+    0% {
+        top: 85%;
+
+    }
+
+    100% {
+        top: 92%;
+
+        color: #29377a;
+    }
+}
+
+.who-we {
+    padding: 100px;
+}
+
+.who-we h1 {
+    color: #204f87;
+    margin: 15px 0;
+    font-size: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+}
+
+.who-we span {
+    display: block;
+    height: 5px;
+    width: 10%;
+    background-color: #f2622c;
+    margin-top: 20px;
+}
+
+.who-we p {
+    color: #b0b0b1;
+    font-family: 'Open Sans', sans-serif
+}
+
+.what-we {
+    background-color: #f7f8f8;
+    background-image: url(../images/item-back.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: 55%;
+}
+
+.what-we span {
+    display: block;
+    height: 5px;
+    width: 7%;
+    background-color: #f2622c;
+    margin: auto;
+}
+
+.what-we h1 {
+    color: #2b2f85;
+    font-size: 36px;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.what-item {
+    position: relative;
+
+}
+
+.what-item::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#28377e+0,28377e+100&0+0,1+99 */
+    background: -moz-linear-gradient(top, rgba(40, 55, 126, 0) 0%, rgba(40, 55, 126, 1) 99%, rgba(40, 55, 126, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(40, 55, 126, 0) 0%, rgba(40, 55, 126, 1) 99%, rgba(40, 55, 126, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(40, 55, 126, 0) 0%, rgba(40, 55, 126, 1) 99%, rgba(40, 55, 126, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0028377e', endColorstr='#28377e', GradientType=0);
+    /* IE6-9 */
+
+    opacity: 0;
+    transition: 0.4s all ease-in-out;
+}
+
+.what-item:hover::before {
+    opacity: 1;
+    height: 100%;
+}
+
+.what-1 {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: 0.4s all ease-in-out;
+    width: 63%;
+    text-align: center;
+}
+
+.what-item:hover .what-1 {
+    opacity: 1;
+    top: 50%;
+    cursor: pointer;
+
+
+}
+
+.what-1 h1 {
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.what-1 h1:hover {
+    color: #f15b2a;
+}
+
+.what-2 {
+    color: #fff;
+    position: absolute;
+    left: 45%;
+    top: 85%;
+    font-size: 26px;
+    transform: translate(-50%, 0);
+    opacity: 0;
+    transition: 0.4s all ease-in-out;
+    cursor: pointer;
+}
+
+.what-item:hover .what-2 {
+    opacity: 1;
+    left: 50%;
+
+}
+
+.OUR-ATTORNEYS {
+    background-image: url(../images/3rd-banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 0 50px 0px;
+}
+
+.attorney-col {
+    margin-top: 150px;
+}
+
+.OUR-ATTORNEYS h1 {
+    font-size: 36px;
+    color: #fff;
+    margin: 25px 0 35px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+}
+
+.OUR-ATTORNEYS p {
+    color: #929dcf;
+    margin: 0px 0 60px 0;
+    font-family: 'Open Sans', sans-serif
+}
+
+.OUR-ATTORNEYS a {
+    text-decoration: none;
+    color: #f2622c;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    transition: 0.4s all ease-in-out;
+
+}
+
+.OUR-ATTORNEYS a:hover {
+    color: #fff;
+}
+
+.OUR-ATTORNEYS span {
+    display: flex;
+    height: 3px;
+    width: 19%;
+    background: #f2622c;
+}
+
+.banner3-item {
+    position: relative;
+}
+
+.banner3-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1a1449+0,1a1449+100&0+0,1+100 */
+    background: -moz-linear-gradient(top, rgba(26, 20, 73, 0) 0%, rgba(26, 20, 73, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(26, 20, 73, 0) 0%, rgba(26, 20, 73, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(26, 20, 73, 0) 0%, rgba(26, 20, 73, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#001a1449', endColorstr='#1a1449', GradientType=0);
+    /* IE6-9 */
+
+    transition: 0.4s all ease-in-out;
+}
+
+.banner3-item:hover::before {
+    height: 100%;
+    opacity: 1;
+}
+
+.attorney-1 {
+    position: absolute;
+    top: 73%;
+    left: 7%;
+    opacity: 0;
+    transition: 0.4s all ease-in-out;
+}
+
+.banner3-item:hover .attorney-1 {
+    opacity: 1;
+    left: 9%;
+}
+
+.attorney-1 h1 {
+    color: #fff;
+    font-size: 29px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.language {
+    padding: 50px 0;
+}
+
+.language h1 {
+    color: #28377e;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.language span {
+    background-color: #f2622c;
+    display: block;
+    height: 5px;
+    width: 5%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.banner-4 {
+    padding: 100px 0 0px;
+}
+
+.banner-4 h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #28377e;
+    margin-bottom: 20px;
+}
+
+.banner-4 p {
+    color: #b1b0b1;
+    font-family: 'Open Sans', sans-serif;
+    margin: 27px 0;
+}
+
+.banner-4 a {
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    color: #f2622c;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.contact {
+    padding: 50px 0;
+    background-color: #28377e;
+}
+
+.contact span {
+    display: block;
+    height: 4px;
+    background: #f15b2a;
+    margin: auto;
+    width: 8%;
+}
+
+.contact h1 {
+    text-align: center;
+    color: #fff;
+    margin: 10px 0 15px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.contact form {
+    padding: 30px;
+    text-align: center;
+}
+
+.contact form input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #4759a7;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 30px;
+    outline: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.contact form input::placeholder{
+    color: #fff;
+}
+.contact form textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #4759a7;
+    padding-left: 3px;
+    padding-bottom: 3px;
+    margin-bottom: 30px;
+    outline: none;
+    color: #fff;
+}
+.contact form textarea::placeholder{
+    color: #fff;
+}
+.contact form input[type=submit] {
+    background: #f15b2a;
+    margin: 0;
+    width: initial;
+    padding: 5px 37px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+footer{
+    background-color: #0c1234;
+    padding: 50px 0;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left{}
+.left p{
+    color: #616ca8;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+.right{}
+.right ul{
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 0;
+}
+.right ul li{
+    margin-left: 15px;
+}
+.right ul li a{
+    text-decoration: none;
+    color: #b1b7dd;
+    font-size: 18px;
+}
